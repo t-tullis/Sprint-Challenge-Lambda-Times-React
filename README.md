@@ -29,10 +29,21 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 
 ## Self-Study/Essay Questions
 
-- [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
-- [ ] Describe a life-cycle event in React?
-- [ ] Explain the details of a Higher Order Component?
-- [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+- [x] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+- PropTypes are used to pass data within the app from component to component. It's important because it helps catch bugs before they become a problem. Also its way to ensure the type of data being passed around.
+
+- [x] Describe a life-cycle event in React?
+
+- Birth/Mounting, Growth/Updating, and Death/Unmounting. To begin you have your class component where the constructor function is called and state data is intialized. Render is invoked and JSX elements are transformed into DOM elements and after render, ComponentDidMount will be invoked. Then Updating where any new props recieved from a parent, will trigger to the child. setState calls a render by default. Then death where the componentWillUnmount is called and the component unmounts. 
+
+- [x] Explain the details of a Higher Order Component?
+
+- A Higher Order Component allows us the capability of reusing component logic. An HOC is a function that receives a Component as an argument and returns a new component.
+
+- [x] What are three different ways to style components in React? Explain some of the benefits of each.
+
+- you can style components using CSS, Styled Components, or React Bootstrap. CSS specificity is easier and gives you more flexibility but more lines of code. Styled Components lets you style within the JS file which helps with readability,so you know exactly what you're changing in each component. React BootStrap helps you get your project styling up and running, also it's a faster way to style in general. Styling maybe limited far as coloring but otherwise it's pretty efficient. 
 
 ## Project Setup
 
@@ -49,17 +60,17 @@ Follow these steps to set up your project:
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
+- [x] Add your project manager as a reviewer on the pull-request
+- [x] Your project manager will count the project as complete by merging the branch back into master.
 
 ## Minimum Viable Product
 
-- [ ] Go through the `Tabs`, `Tab`, `Cards`, and `Card` components following the instructions, and passing data and props to get the tabs and cards to appear on the screen.
-- [ ] Once the Tabs and Cards are rendering to the screen complete the `changeSelected` and `filterCards` functions in the `Content` component.
-- [ ] You should now be able to filter cards using your tabs!
-- [ ] Make sure all of your props being passed are validated using PropTypes.
-- [ ] Find the `TopBar` and `Header` components. Convert these two components to Styled Components. You should not have any `className` props when you are finished.
+- [x] Go through the `Tabs`, `Tab`, `Cards`, and `Card` components following the instructions, and passing data and props to get the tabs and cards to appear on the screen.
+- [x] Once the Tabs and Cards are rendering to the screen complete the `changeSelected` and `filterCards` functions in the `Content` component.
+- [x] You should now be able to filter cards using your tabs!
+- [x] Make sure all of your props being passed are validated using PropTypes.
+- [x] Find the `TopBar` and `Header` components. Convert these two components to Styled Components. You should not have any `className` props when you are finished.
 
 ## Stretch Challenge
 
